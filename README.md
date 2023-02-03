@@ -11,6 +11,7 @@ The key to properly **tree-shake** ramda imports is to:
 
 ```js
 {
+  mode: 'production', // drops "dead code" from the bundle by setting proper defaults to `optimization` config
   optimization: {
     sideEffects: true, // tells webpack to recognise the sideEffects flag in package.json, ramda is side effects free
     minimize: true, // needs to be set to `true` for proper tree-shaking
