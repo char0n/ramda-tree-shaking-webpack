@@ -9,7 +9,7 @@ The key to properly **tree-shake** ramda imports is to:
 - use webpack `mode=production` which sets proper defaults to [webpack optimization config](https://webpack.js.org/configuration/optimization/#optimizationusedexports)
 - if you want to adjust [webpack optimization config](https://webpack.js.org/configuration/optimization/#optimizationusedexports) make sure following options are always enabled:
 
-```json
+```js
 {
   optimization: {
     sideEffects: true, // tells webpack to recognise the sideEffects flag in package.json, ramda is side effects free
@@ -17,7 +17,7 @@ The key to properly **tree-shake** ramda imports is to:
     providedExports: true, // if set to `true` is gives far better results
     usedExports: true, // needs to be set to `true` for proper tree-shaking
     concatenateModules: true, // needs to be set to `true` for proper tree-shaking
-  },
+  }
 }
 ```
 
