@@ -1,7 +1,7 @@
 {
   "name": "ramda-tree-shaking-webpack",
   "version": "1.0.0",
-  "description": "POC of ramda tree shaking using webpack",
+  "description": "POC of ramda tree-shaking using webpack",
   "main": "src/index.js",
   "scripts": {
     "build:webpack:no-config": "webpack",
