@@ -1,0 +1,36 @@
+{
+  "name": "ramda-tree-shaking-webpack",
+  "version": "1.0.0",
+  "description": "POC of ramda tree shaking using webpack",
+  "main": "src/index.js",
+  "scripts": {
+    "build:webpack:no-config": "webpack",
+    "build:webpack:config-simple": "webpack --config ./config/webpack/simple.js",
+    "build:webpack:config-babel": "webpack --config ./config/webpack/babel.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/char0n/ramda-tree-shaking-webpack.git"
+  },
+  "keywords": [
+    "ramda",
+    "tree",
+    "shaking",
+    "webpack"
+  ],
+  "author": "Vladimír Gorej <vladimir.gorej@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/char0n/ramda-tree-shaking-webpack/issues"
+  },
+  "homepage": "https://github.com/char0n/ramda-tree-shaking-webpack#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.2",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "ramda": "=0.28.0"
+  }
+}
